@@ -17,8 +17,7 @@ body{
     display:flex;
     flex-grow:1;
     position:relative;
-    align-items: center;
-    justify-content: center;
+
 }
 
 .left-side img {
@@ -26,18 +25,32 @@ body{
     height: 100%;
 }
 
-#odin{
+.image-wrapper{
     position:absolute;
-    width: 200px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:20%;
+}
+
+h2{
+    font-size:100px;
+    color: #FFB300; /* Gold */
+    text-shadow: 2px 2px 10px rgba(255, 179, 0, 0.6); /* Subtle glow */
+
+}
+
+#odin{
+    width: 150px;
     height: auto;
 }
 
 .right-Side{
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* ✅ Makes sure it fills available space */
-  
-
+    flex-grow: 1; 
 }
 .upper-Container{
     height: 500px;
@@ -107,7 +120,7 @@ button:focus{
     background-color:#D32F2F;
 }
 
-span{
-    color:#ECEFF1	
+label{
+    font-size: 30px;
 }
 
