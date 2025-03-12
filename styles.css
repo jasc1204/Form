@@ -1,9 +1,21 @@
 body{
+    font-family: 'Norse', sans-serif;
+
     display: flex;
     align-items: center;
     justify-content: center;
     color:#B0BEC5	
 }
+
+@font-face {
+    font-family: 'Norse';
+    src: url('font/Norse-Bold.woff2') format('woff2'),
+        url('font/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 .full-container{
     display: flex;
@@ -35,6 +47,9 @@ body{
     top:20%;
 }
 
+h1{
+    color: #FFB300
+}
 h2{
     font-size:100px;
     color: #FFB300; /* Gold */
@@ -69,8 +84,8 @@ h2{
     height: 300px;
     width: 800px;  
     background-color: #102A43	;
-    padding: 30px;
-    flex-grow: 1;;
+    padding: 30px 30px 70px 30px;
+    flex-grow:3;
 }
 
 .bottom-container{
@@ -103,13 +118,26 @@ h2{
 
 
 button[type="submit"]{
-    width: 250px;
+    width: 300px;
     border-radius:10px;
     border:3px solid #8B0000;
     padding:10px;
     font-size: 20px;
-    background-color: #D32F2F	;
-    color:#FFFFFF	
+    background-color: #0D47A1	;
+    color:white;
+    font-weight: bold;
+	
+}
+input{
+    font-size: 15px;
+}
+
+input:invalid{
+    border:5px solid red;
+}
+
+input:valid{
+    border:5px solid green;
 }
 
 button:hover{
@@ -121,6 +149,10 @@ button:focus{
 }
 
 label{
-    font-size: 30px;
+    font-size: 25px;
+}
+
+button + p{
+    font-size: 25px;
 }
 
